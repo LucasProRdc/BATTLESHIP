@@ -5,19 +5,19 @@
         <title>Battleship</title>
         <link rel="stylesheet" href="CSS/style.css">
         <script>
-              function init() {
-    var fireButton = document.getElementById("firebutton");
-    fireButton.onclick = handleFireButton;
-   }
+             function init() {
+                 var fireButton = document.getElementById("firebutton");
+                 fireButton.onclick = handleFireButton;
+            }
    
-function handleFireButton() {
-    var guessInput = document.getElementById("guessInput");
-    var guess = guessInput.value;
-    controller.processGuess(guess);
-    guessInput.value = "";
-}
+            function handleFireButton() {
+                var guessInput = document.getElementById("guessInput");
+                var guess = guessInput.value;
+                controller.processGuess(guess);
+                guessInput.value = "";
+            }
 
-window.onload = init;
+            window.onload = init;
         </script>
     </head>
      <body>
